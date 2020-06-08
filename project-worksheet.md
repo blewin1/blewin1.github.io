@@ -131,4 +131,4 @@ function reverse(string) {
 
 #### SAMPLE.....
 **ERROR**: Header and footer overflow the width when set to position: fixed;          
-**RESOLUTION**: 
+**RESOLUTION**: Set left: 0; and right: 0; rather than trying to use width: 100% or width: 100vw;

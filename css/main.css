@@ -10,9 +10,10 @@ header {
     color: white;
     padding-left: 1rem;
     padding-right: 1rem;
-    /* position: fixed; */
-    /* top: 0; */
-    /* width: 100vw; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav a {
@@ -29,6 +30,7 @@ nav a {
 
 .home-section {
     height: 400px;
+    padding-top: 50px;
     background-color: teal;
     display: flex;
     flex-direction: column;
@@ -84,8 +86,10 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
     background-color: black;
     color: white;
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
 }
