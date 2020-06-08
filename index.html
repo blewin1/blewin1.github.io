@@ -6,16 +6,21 @@
     <title>Ben Lewin</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Ben Lewin</h1>
         <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
-            <a class="menu-icon" href=""><img src="" alt="Menu Icon"></a>
+            <div class="mobile-nav-container">
+                <h1>Ben Lewin</h1>
+                <a href=""><img class="menu-icon" src="images/hamburger_menu.png" alt="Menu Icon"></a>
+            </div>
+            <div class="menu-items menu-items-closed">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Projects</a>
+                <a href="">Contact</a>
+            </div>  
         </nav>
     </header>
     <main>
@@ -47,5 +52,6 @@
             <img src="" alt="linkedIn Link">
         </div>
     </footer>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

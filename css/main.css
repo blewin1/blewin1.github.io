@@ -3,17 +3,41 @@ html {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    color: white;    
+}
+.mobile-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu-icon {
+    height: 44px;
+    padding-right: 1rem;
+}
+h1 {
+    padding-left: 1rem;
+}
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu-items-closed {
+    display: none;
 }
 
 nav a {
@@ -21,11 +45,10 @@ nav a {
     text-decoration: none;
     font-size: 1.7rem;
     padding: 1rem;
-    position: static;
 }
 
 .menu-icon {
-    display: none;
+    /* display: none; */
 }
 
 .home-section {
@@ -92,4 +115,23 @@ footer {
     color: white;
     /* width: 100%;
     max-width: 100%; */
+}
+
+/* Tablet css here */
+@media only screen and (min-width:768px){
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        flex-direction: row;
+    }
+    .menu-items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Desktop css here */
+@media only screen and (min-width:1024px) {
+
 }
