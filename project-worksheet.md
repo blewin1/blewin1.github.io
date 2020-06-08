@@ -10,7 +10,7 @@
 |Day 1| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 2| Responsive Nav | Incomplete
 |Day 2| Contact Form | Incomplete
-|Day 3| Project Grid functionality
+|Day 3| Project Grid functionality | Incomplete
 |Day 4| Bugfixes and Post MVP functionality | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
@@ -130,5 +130,5 @@ function reverse(string) {
  Use this section to list of all major issues encountered and their resolution.
 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: Header and footer overflow the width when set to position: fixed;          
+**RESOLUTION**: 

@@ -1,0 +1,91 @@
+html {
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100vw; */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 1rem;
+    position: static;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.home-section {
+    height: 400px;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-section h2 {
+    font-size: 70px;
+    color: white;
+}
+#headshot {
+    margin-top: 20px;
+    height: 200px;
+    border-radius: 100%;
+}
+.about-section {
+    height: 400px;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-size: 50px;
+    color: white;
+}
+.about-section p {
+    max-width: 800px;
+    margin-top: 40px;
+}
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-color: coral;
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: cornflowerblue;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+}
