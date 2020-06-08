@@ -7,8 +7,8 @@
 |---|---| ---|
 |Day 0| Project Description | Complete
 |Day 0| Wireframes / Timeline | Complete
-|Day 1| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 2| Responsive Nav | Incomplete
+|Day 1| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 2| Responsive Nav | Complete
 |Day 2| Contact Form | Incomplete
 |Day 3| Project Grid functionality | Incomplete
 |Day 4| Bugfixes and Post MVP functionality | Incomplete
@@ -94,9 +94,9 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Hamburger | H | 1hr | -hr | -hr|
+| Hamburger | H | 1hr | 1hr | 1hr|
 | Project Grid | H | 1hr | -hr | -hr |
-| Responsive Nav | H | 1hr | -hr | -hr|
+| Responsive Nav | H | 1hr | .5hr | .5hr|
 | Project Grid Hover | H | 2hrs| -hr | -hr |
 | Filling in Content | M | 2hrs | -hr | -hr|
 | Working with API | H | 1.5hrs| -hr | -hr |
