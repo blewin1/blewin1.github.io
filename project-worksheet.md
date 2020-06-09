@@ -134,5 +134,5 @@ function reverse(string) {
 **RESOLUTION**: Set left: 0; and right: 0; rather than trying to use width: 100% or width: 100vw;
 
 
-**ERROR**: Flexbox broke when I added Bootstrap
+**ERROR**: Flexbox broke when I added Bootstrap.
 **RESOLUTION**: My main stylesheet needed to be moved to below the bootstrap stylesheet.

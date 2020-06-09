@@ -3,7 +3,6 @@ html {
 }
 
 header {
-
     position: fixed;
     top: 0;
     left: 0;
@@ -21,6 +20,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 .menu-icon {
@@ -29,6 +29,8 @@ nav {
 }
 h1 {
     padding-left: 1rem;
+    text-align: center;
+    margin: 0;
 }
 .menu-items {
     display: flex;
@@ -93,6 +95,27 @@ h2 {
     height: 600px;
     background-color: coral;
 }
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+    background-size: cover;
+    color: white;
+    height: 200px;
+    border-radius: 8px;
+    margin: 25px;
+}
+.project-card img {
+    width: 100%;
+    
+}
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -138,6 +161,9 @@ footer {
         display: flex;
         flex-direction: row;
     }
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .contact-section form {
         max-width: 800px;
     }
@@ -151,5 +177,7 @@ footer {
 
 /* Desktop css here */
 @media only screen and (min-width:1024px) {
-
+    .project-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
