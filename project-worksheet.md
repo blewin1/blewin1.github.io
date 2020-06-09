@@ -129,6 +129,10 @@ function reverse(string) {
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
+
 **ERROR**: Header and footer overflow the width when set to position: fixed;          
 **RESOLUTION**: Set left: 0; and right: 0; rather than trying to use width: 100% or width: 100vw;
+
+
+**ERROR**: Flexbox broke when I added Bootstrap
+**RESOLUTION**: My main stylesheet needed to be moved to below the bootstrap stylesheet.

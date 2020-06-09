@@ -74,6 +74,9 @@ nav a {
     justify-content: center;
     align-items: center;
 }
+.about-section p {
+    margin: 30px;
+}
 h2 {
     font-size: 50px;
     color: white;
@@ -97,6 +100,18 @@ h2 {
     justify-content: center;
     height: 400px;
     background-color: cornflowerblue;
+    padding-bottom: 50px;
+}
+.name-email-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.contact-section form {
+    width: 100%;
+}
+.form-group {
+    padding: 0 20px;
 }
 footer {
     display: flex;
@@ -109,8 +124,6 @@ footer {
     right: 0;
     background-color: black;
     color: white;
-    /* width: 100%;
-    max-width: 100%; */
 }
 
 /* Tablet css here */
@@ -124,6 +137,15 @@ footer {
     .menu-items {
         display: flex;
         flex-direction: row;
+    }
+    .contact-section form {
+        max-width: 800px;
+    }
+    .name-email-container {
+        flex-direction: row;
+    }
+    .form-group{
+        flex-grow: 1;
     }
 }
 
