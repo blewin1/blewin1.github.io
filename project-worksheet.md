@@ -97,11 +97,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 | Hamburger | H | 1hr | 1hr | 1hr|
 | Project Grid | H | 1hr | -hr | -hr |
 | Responsive Nav | H | 1hr | .5hr | .5hr|
-| Project Grid Hover | H | 2hrs| -hr | -hr |
+| Project Grid Overlay | H | 2hrs| 2hr | 2hr |
 | Filling in Content | M | 2hrs | -hr | -hr|
-| Working with API | H | 1.5hrs| -hr | -hr |
-| Contact Form | H | 1hr | -hr | -hr|
-| Overall Styling | 3hrs | -hr | -hr |
+| Working with API | H | 1.5hrs| 0.5hr | 0.5hr |
+| Contact Form | H | 1hr | 1hr | 1hr|
+| Overall Styling | 3hrs | 1hr | -hr |
 | Social Media Icons | L | 1hr | -hr | -hr|
 | Total | H | 13.5hrs| -hrs | -hrs |
 
