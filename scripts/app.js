@@ -19,17 +19,21 @@ $(() => {
     const addCard = (projectInfo) => {
         let $card =
         $(`<div class="project-card">
-            <div class="project-title">
-                <h3>${projectInfo.title}</h3>
-            </div>
+            
             <div class="project-overlay">
                 <p>${projectInfo.description}</p>
                 <a href="${projectInfo.url}"><button type="button" class="btn btn-info">View Website</button></a>
             </div>        
+            <img src="${projectInfo.image}" alt="picture of site">
         </div>`);
-        $card.css('background-image', `url(${projectInfo.image})`)
-        // console.log(projectInfo);
-        // let $card = $('<div>').addClass('project-card')
+        // $card.css('background-image', `url(${projectInfo.image})`)
+
+        $title = 
+        $(`<div class="project-title">
+            <h3>${projectInfo.title}</h3>
+        </div>`).css('background-color', projectInfo.highlightColor);
+        
+        $card.prepend($title);
         $('.project-container').append($card);
     }
 
@@ -49,7 +53,8 @@ $(() => {
                 title: project.gsx$title.$t,
                 image: project.gsx$image.$t,
                 url: project.gsx$liveurl.$t,
-                description: project.gsx$description.$t
+                description: project.gsx$description.$t,
+                highlightColor: project.gsx$highlightcolor.$t,
             }
         })
         renderProjects(projects);
