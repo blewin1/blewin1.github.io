@@ -19,19 +19,19 @@ $(() => {
     const addCard = (projectInfo) => {
         let $card =
         $(`<div class="project-card">
-            
+            <div class="project-title">
+                <h3>${projectInfo.title}</h3>
+            </div>
             <div class="project-overlay">
                 <p>${projectInfo.description}</p>
-                <a href="${projectInfo.url}"><button type="button" class="btn btn-info">View Website</button></a>
+                <a href="${projectInfo.url}" target="_blank"><button type="button" class="btn btn-info">View Website</button></a>
             </div>        
             <img src="${projectInfo.image}" alt="picture of site">
         </div>`);
         // $card.css('background-image', `url(${projectInfo.image})`)
 
         $title = 
-        $(`<div class="project-title">
-            <h3>${projectInfo.title}</h3>
-        </div>`).css('background-color', projectInfo.highlightColor);
+        $(`<div class="project-color"></div>`).css('background-color', projectInfo.highlightColor);
         
         $card.prepend($title);
         $('.project-container').append($card);
