@@ -12,8 +12,8 @@
 |Day 2| Contact Form | Complete
 |Day 3| Project Grid functionality | Complete
 |Day 4| Bugfixes | Complete
-|Day 5| Final Touches | Incomplete
-|Day 6| Present | Incomplete
+|Day 5| Final Touches | Complete
+|Day 6| Present | Complete
 
 
 ## Project Description
@@ -87,7 +87,7 @@ Desktop/Tablet Wireframe:
 | Filling in Content | M | 2hrs | 3hrs | 3hrs|
 | Working with API | H | 1.5hrs| 0.5hr | 0.5hr |
 | Contact Form | H | 1hr | 1hr | 1hr|
-| Overall Styling | 3hrs | 3hr | 3hr |
+| Overall Styling | H | 3hrs | 3hr | 3hr |
 | Social Media Icons | L | 1hr | 0hr | 0hr|
 | Total | H | 13.5hrs| 11.5hrs | 11.5hrs |
 

@@ -88,8 +88,9 @@ h2 {
     padding: 50px 0;
 }
 .about-section p {
-    max-width: 800px;
+    max-width: 1200px;
     margin-top: 40px;
+    font-size: 20px;
 }
 .projects-section {
     display: flex;
