@@ -14,8 +14,6 @@ $(() => {
         $('.menu-items').addClass('menu-items-closed');
     });
 
-    // <img src="${projectInfo.image}" alt="picture of site">
-
     const addCard = (projectInfo) => {
         let $card =
         $(`<div class="project-card">
@@ -28,26 +26,22 @@ $(() => {
             </div>        
             <img src="${projectInfo.image}" alt="picture of site">
         </div>`);
-        // $card.css('background-image', `url(${projectInfo.image})`)
 
-        $title = 
-        $(`<div class="project-color"></div>`).css('background-color', projectInfo.highlightColor);
+        let $color = $(`<div class="project-color"></div>`).css('background-color', projectInfo.highlightColor);
         
-        $card.prepend($title);
+        $card.prepend($color);
         $('.project-container').append($card);
     }
 
     const renderProjects = (projectsArr) => {
         projectsArr.forEach(project => {
             addCard(project);
-            console.log(project)
         });
     }
 
     $.ajax({
         url: projectSheetAsJSON
     }).then(data => {
-        console.log('aaa', data.feed.entry[0].gsx$liveurl)
         const projects = data.feed.entry.map(project => {
             return {
                 title: project.gsx$title.$t,

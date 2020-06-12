@@ -9,9 +9,9 @@
 |Day 0| Wireframes / Timeline | Complete
 |Day 1| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 2| Responsive Nav | Complete
-|Day 2| Contact Form | Incomplete
-|Day 3| Project Grid functionality | Incomplete
-|Day 4| Bugfixes and Post MVP functionality | Incomplete
+|Day 2| Contact Form | Complete
+|Day 3| Project Grid functionality | Complete
+|Day 4| Bugfixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -59,21 +59,7 @@ Desktop/Tablet Wireframe:
 
 ## Time/Priority Matrix 
 
-[Link]()
-
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
-
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
-
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP (examples)
+#### MVP 
 
 - Pull data using google json api
 - Render data on page 
@@ -81,7 +67,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Responsive Nav
 - Project Grid w/ hover descriptions
 - Contact form
-- Icons on footer
+- Links on footer
 
 #### PostMVP 
 
@@ -95,34 +81,55 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Hamburger | H | 1hr | 1hr | 1hr|
-| Project Grid | H | 1hr | -hr | -hr |
+| Project Grid | H | 1hr | .5hr | .5hr |
 | Responsive Nav | H | 1hr | .5hr | .5hr|
-| Project Grid Overlay | H | 2hrs| 2hr | 2hr |
-| Filling in Content | M | 2hrs | -hr | -hr|
+| Project Grid Overlay | H | 2hrs| 2hr | 2hrs |
+| Filling in Content | M | 2hrs | 3hrs | 3hrs|
 | Working with API | H | 1.5hrs| 0.5hr | 0.5hr |
 | Contact Form | H | 1hr | 1hr | 1hr|
-| Overall Styling | 3hrs | 1hr | -hr |
-| Social Media Icons | L | 1hr | -hr | -hr|
-| Total | H | 13.5hrs| -hrs | -hrs |
+| Overall Styling | 3hrs | 3hr | 3hr |
+| Social Media Icons | L | 1hr | 0hr | 0hr|
+| Total | H | 13.5hrs| 11.5hrs | 11.5hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Nav Auto Highlight | L | 2hr | -hr | -hr|
-| Nav buttons smooth scroll | L | 2hr | -hr | -hr|
+| Nav buttons smooth scroll | L | 2hr | .5hr | .5hr|
 | Mobile Nav Scroll away and back | M | 3hr | -hr | -hr|
-| Total | H | 7hrs| -hrs | -hrs |
+| Total | H | 7hrs| .5hrs | .5hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ I used Bootstrap for the form fields, and for button formatting.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+The following code creates the project matrix.  It creates several layers:
+	- A project title (which ends up on the top)
+	- A project overlay (with the description and a link to the project)
+	- An image layer, with the image of the project to display
+	- A color layer, which allows for a translucent color layer to be applied over the image
+
+When connected to some clever CSS, this code makes a very satisfying project card with an interactive overlay.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+const addCard = (projectInfo) => {
+	let $card =
+	$(`<div class="project-card">
+		<div class="project-title">
+			<h3>${projectInfo.title}</h3>
+		</div>
+		<div class="project-overlay">
+			<p>${projectInfo.description}</p>
+			<a href="${projectInfo.url}" target="_blank"><button type="button" class="btn btn-info">View Website</button></a>
+		</div>        
+		<img src="${projectInfo.image}" alt="picture of site">
+	</div>`);
+
+	let $color = $(`<div class="project-color"></div>`).css('background-color', projectInfo.highlightColor);
+	
+	$card.prepend($color);
+	$('.project-container').append($card);
 }
 ```
 

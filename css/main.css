@@ -118,7 +118,6 @@ h2 {
     width: 100%;
     padding-top: 66%; 
     
-    transition: background-color 250ms ease;
     background-size: contain;
     background-position: center;
     position: relative;
@@ -148,9 +147,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 20%; */
-
-    /* background-color: rgba(0,0,0,.5); */
 } 
 .project-title h3 {
     font-size: 30px;
@@ -188,19 +184,12 @@ h2 {
     border-radius: 8px;
     transition: all 1s ease;
 }
-/* .project-overlay > a {
-    display: none;
-} */
 .project-overlay:hover {
     opacity: 1;
 }
 .project-overlay:hover ~ img {
     transform: scale(1.2);
 }
-/* .project-overlay:focus > a {
-    display: auto;
-} */
-
 .contact-section {
     display: flex;
     flex-direction: column;
